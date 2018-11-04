@@ -1,0 +1,12 @@
+.btn-link{
+    border:none;
+    outline:none;
+    background:none;
+    cursor:pointer;
+    color: #537eff;
+    padding:0;
+    margin-bottom: -2%;
+    text-align: left;
+    display: inline;
+
+}
