@@ -23,7 +23,7 @@
 <nav class="navbar navbar-light bg-light static-top">
     <div class="container">
         <a class="navbar-brand" href="<c:url value="/index" />"><img src="img/logo-small.png" width="60" height="auto" class="d-inline-block align-top" alt="">  Banana Search</a>
-        <a class="btn btn-primary" href="<c:url value="/login" />">Welcome Skaworld</a>
+        <a class="btn btn-primary" href="#">Welcome ${sessionScope.user}</a>
     </div>
 </nav>
 
@@ -72,6 +72,9 @@
                     <li class="list-inline-item">&sdot;</li>
                     <li class="list-inline-item">
                         <a href="#">Privacy Policy</a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="<c:url value="/logout" />">Logout</a>
                     </li>
                 </ul>
                 <p class="text-muted small mb-4 mb-lg-0">&copy; Banana search engine 2018. All Rights Reserved.</p>
