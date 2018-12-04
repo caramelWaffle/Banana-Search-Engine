@@ -38,7 +38,7 @@
                 </div>
             </div>
         </form>
-        <a class="btn btn-primary" href="<c:url value="/login" />">Welcome Skaworld</a>
+        <a class="btn btn-primary" href="<c:url value="/login" />">Welcome ${sessionScope.user}</a>
     </div>
 
 </nav>

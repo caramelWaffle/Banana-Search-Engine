@@ -19,7 +19,12 @@
     <link rel="stylesheet" type="text/css"
           href='<c:url value="/css/login_css.css" />'/>
 </head>
-
+<script type="text/javascript">
+	var register_msg= "${requestScope.register_msg}";
+	if(register_msg){
+		alert(register_msg);
+	}
+</script>
 <body id="LoginForm">
 <div class="container">
     <h1 class="form-heading">Banana Literature Searching</h1>
@@ -29,11 +34,11 @@
                 <h2>Login Form</h2>
                 <p>Please enter your username and password</p>
             </div>
-        <form:form cssClass="form" action="/login" method="POST">
+        <form:form cssClass="form" action="/loginverify" method="POST">
 
                 <div class="form-group">
 
-
+					
                     <input type="text" class="form-control" id="inputEmail" placeholder="Username" name="username">
 
                 </div>
@@ -44,7 +49,7 @@
 
                 </div>
 
-
+				<p style="color:red">     ${requestScope.msg}</p>
                 <button type="submit" class="btn btn-primary" value="Login">Login</button>
 
         </form:form>
